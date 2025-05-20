@@ -5,7 +5,7 @@ from ..utils import jwt_required
 me_router = Blueprint("me_router", __name__)
 
 
-@me_router.get("/short.me/@me")
+@me_router.get("/cepat-tepat/@me")
 @jwt_required()
 async def user_login():
     user = request.user
